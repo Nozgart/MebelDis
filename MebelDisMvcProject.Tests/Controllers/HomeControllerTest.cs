@@ -50,5 +50,18 @@ namespace MebelDisMvcProject.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+
+        [TestMethod]
+        public void TestPage()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.TestPage() as ViewResult;
+
+            // Assert
+            Assert.AreEqual("Лол кек чебурек я попался на омлет", result.ViewBag.TestPage);
+        }
     }
 }
