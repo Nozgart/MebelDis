@@ -26,5 +26,13 @@ namespace MebelDisMvcProject.Controllers
 
             return View();
         }
+
+        public ActionResult TestPage()
+        {
+            ViewBag.Message = "Your Test page. Artorias ";
+            ViewBag.TestPage = "Лол кек чебурек я попался на омлет";
+
+            return View();
+        }
     }
 }
